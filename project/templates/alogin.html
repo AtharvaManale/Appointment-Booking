@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartVolt Admin Panel</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', sans-serif;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("static/bg2.png");
+            background-size: cover;
+        }
+        .container{
+            height: 32vmin;
+            width: 30vmin;
+            border-radius: 5px;
+            margin: 200px 700px auto auto;
+            background-color:  #010a56;
+            box-shadow: 5px 8px #000;
+        }
+        lable{
+            color: #c8e6c9;
+        }
+        input{
+            margin: 10px;
+        }
+        #submit{
+            margin: 25px auto auto 70px;
+            height: 25px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 style="text-align: center; color: #c8e6c9;">Admin Panel</h3>
+        <form action="/alogin" method="POST">
+        <lable>Username</lable>
+        <input type="text" name="Username" placeholder="Username.." required>
+        <lable>Password</lable>
+        <input type="password" name="Password" placeholder="Password.." required>
+        <a><Button type="submit" id="submit">Login</Button></a>      
+        </form>
+    </div>
+
+</body>
+</html>
